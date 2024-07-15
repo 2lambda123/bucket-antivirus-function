@@ -1,7 +1,7 @@
 repos:
 
-  - repo: https://github.com/ambv/black
-    rev: 19.3b0
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
     hooks:
       - id: black
         language_version: python3.7
@@ -10,7 +10,7 @@ repos:
             scripts/gen-docs-index|
           )$
 
-  - repo: git://github.com/pre-commit/pre-commit-hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.2.3
     hooks:
       - id: check-ast
@@ -24,14 +24,14 @@ repos:
       - id: flake8
       - id: trailing-whitespace
 
-  - repo: git://github.com/igorshubovych/markdownlint-cli
-    rev: v0.17.0
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
     hooks:
       - id: markdownlint
         entry: markdownlint --ignore .github/*.md
 
-  - repo: git://github.com/aws-cloudformation/cfn-python-lint
-    rev: v0.49.0
+  - repo: https://github.com/aws-cloudformation/cfn-python-lint
+    rev: v1.6.1
     hooks:
       - id: cfn-python-lint
         files: deploy/

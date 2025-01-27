@@ -25,13 +25,13 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.43.0
+    rev: v0.44.0
     hooks:
       - id: markdownlint
         entry: markdownlint --ignore .github/*.md
 
   - repo: https://github.com/aws-cloudformation/cfn-python-lint
-    rev: v1.22.4
+    rev: v1.22.7
     hooks:
       - id: cfn-python-lint
         files: deploy/
